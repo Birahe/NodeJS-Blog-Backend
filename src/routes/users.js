@@ -18,6 +18,7 @@ router.post("/", (req, res) => {
     password: req.body.password,
     createdAt: new Date(),
     updatedAt: new Date(),
+    email: req.body.email,
   });
   user.save((err, user) => {
     if (err) {
